@@ -1,0 +1,16 @@
+.card {
+    border-radius: 0.5em;
+    padding: 1em;
+    display: flex;
+    width: 350px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.card.lg {
+    height: 300px;
+    align-items: center;
+}
+.card.sm {
+    height: 150px;
+}
