@@ -1,9 +1,14 @@
 import React from 'react';
+import NavBar from './containers/NavBar/NavBar';
+import SocialMain from './containers/SocialMain/SocialMain';
+import Overview from './containers/Overview/Overview';
 
 function App() {
   return (
     <div>
-      {/* Main App Container */}
+      <NavBar/>
+      <SocialMain/>
+      <Overview/>
     </div>
   );
 }

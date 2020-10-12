@@ -12,49 +12,45 @@ export const TOTAL_FOLLOWERS = 23004;
 */
 export const MAIN_DATA = [
     {
+        id: 0,
         mainDatatype: true,
         icon: 'fb',
         user: '@nathanf',
-        people: {
-            cant: 1987,
-            type: 'followers'
-        },
+        cant: 1987,
+        type: 'followers',
         today: `12 Today`,
         past: 81,
         up: true
     },
     {
+        id: 1,
         mainDatatype: true,
         icon: 'tw',
         user: '@nathanf',
-        people: {
-            cant: 1044,
-            type: 'followers'
-        },
+        cant: 1044,
+        type: 'followers',
         today: `99 Today`,
         past: 59,
         up: true
     },
     {
+        id: 2,
         mainDatatype: true,
         icon: 'ig',
         user: '@realnathanf',
-        people: {
-            cant: 11e6,
-            type: 'followers'
-        },
+        cant: 11e6,
+        type: 'followers',
         today: `1099 Today`,
         past: 875,
         up: true
     },
     {
+        id: 3,
         mainDatatype: true,
         icon: 'yt',
         user: 'Nathan F.',
-        people: {
-            cant: 1987,
-            type: 'subscribers'
-        },
+        cant: 1987,
+        type: 'subscribers',
         today: `12 Today`,
         past: 20,
         up: false
@@ -68,6 +64,7 @@ export const MAIN_DATA = [
 */
 export const OVERVIEW_DATA = [
     {
+        id: 0,
         overviewDataType: true,
         title: 'Page Views',
         cant: 87,
@@ -76,6 +73,7 @@ export const OVERVIEW_DATA = [
         up: true
     },
     {
+        id: 1,
         overviewDataType: true,
         title: 'Likes',
         cant: 52,
@@ -84,6 +82,7 @@ export const OVERVIEW_DATA = [
         up: false
     },
     {
+        id: 2,
         overviewDataType: true,
         title: 'Likes',
         cant: 5462,
@@ -92,6 +91,7 @@ export const OVERVIEW_DATA = [
         up: true
     },
     {
+        id: 3,
         overviewDataType: true,
         title: 'Profile Views',
         cant: 52e6,
@@ -100,6 +100,7 @@ export const OVERVIEW_DATA = [
         up: true
     },
     {
+        id: 4,
         overviewDataType: true,
         title: 'Retweets',
         cant: 117,
@@ -108,6 +109,7 @@ export const OVERVIEW_DATA = [
         up: true
     },
     {
+        id: 5,
         overviewDataType: true,
         title: 'Likes',
         cant: 507,
@@ -116,6 +118,7 @@ export const OVERVIEW_DATA = [
         up: true
     },
     {
+        id: 6,
         overviewDataType: true,
         title: 'Likes',
         cant: 107,
@@ -124,6 +127,7 @@ export const OVERVIEW_DATA = [
         up: false
     },
     {
+        id: 7,
         overviewDataType: true,
         title: 'Total Views',
         cant: 1407,

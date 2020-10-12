@@ -1,0 +1,13 @@
+.header-container {
+    max-width: 1440px;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
