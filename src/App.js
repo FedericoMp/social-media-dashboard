@@ -5,7 +5,7 @@ import Overview from './containers/Overview/Overview';
 
 function App() {
   return (
-    <div>
+    <div className='container-app'>
       <NavBar/>
       <SocialMain/>
       <Overview/>

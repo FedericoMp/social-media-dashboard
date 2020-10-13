@@ -13,7 +13,7 @@ export const TOTAL_FOLLOWERS = 23004;
 export const MAIN_DATA = [
     {
         id: 0,
-        mainDatatype: true,
+        mainDataType: true,
         icon: 'fb',
         user: '@nathanf',
         cant: 1987,
@@ -24,7 +24,7 @@ export const MAIN_DATA = [
     },
     {
         id: 1,
-        mainDatatype: true,
+        mainDataType: true,
         icon: 'tw',
         user: '@nathanf',
         cant: 1044,
@@ -35,7 +35,7 @@ export const MAIN_DATA = [
     },
     {
         id: 2,
-        mainDatatype: true,
+        mainDataType: true,
         icon: 'ig',
         user: '@realnathanf',
         cant: 11e6,
@@ -46,7 +46,7 @@ export const MAIN_DATA = [
     },
     {
         id: 3,
-        mainDatatype: true,
+        mainDataType: true,
         icon: 'yt',
         user: 'Nathan F.',
         cant: 1987,

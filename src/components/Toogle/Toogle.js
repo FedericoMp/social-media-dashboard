@@ -10,17 +10,17 @@ const Toogle = ({hasText, text}) => {
     }
 
     return (
-        <div className='switch-wrapper'>
+        <div className='toogle-wrapper'>
             {
                 (hasText)
                 ? (
                     (text)
-                    ? <p className='switch-text'>{text}</p>
-                    : <p className='switch-text'>Switch mode</p>
+                    ? <p className='toogle-text'>{text}</p>
+                    : <p className='toogle-text'>Switch mode</p>
                 )
                 : null
             }
-            <label className='switch'>
+            <label className='toogle'>
                 <input 
                     type='checkbox'
                     onChange={handleChange}

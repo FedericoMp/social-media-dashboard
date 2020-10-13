@@ -4,7 +4,7 @@ import './BigNumber.css';
 const BigNumber = ({number, size}) => {
     return (
         <span className={`
-            number
+            big-number
             ${(size === 'lg') ? 'lg' : ''}
             ${(size === 'sm') ? 'sm' : ''}
         `}>
