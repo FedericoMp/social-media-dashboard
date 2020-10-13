@@ -1,12 +1,18 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import {ThemeContext} from '../../context/ThemeContext';
 import './Toogle.css';
 
 const Toogle = ({hasText, text}) => {
+
     const [toogle, setToogle] = useState(false);
+
+    const {theme, toogleTheme} = useContext(ThemeContext);
+    console.log(theme);
 
     const handleChange = (e) => {
         let toogleVal = e.target.checked;
         setToogle(toogleVal)
+        toogleTheme(toogleVal)
     }
 
     return (

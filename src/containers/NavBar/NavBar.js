@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {ThemeContext} from '../../context/ThemeContext';
 import Toogle from '../../components/Toogle/Toogle';
 import {localeStr} from '../../utils';
 import {TOTAL_FOLLOWERS} from '../../services';
 
 const NavBar = () => {
+    
+    const {theme} = useContext(ThemeContext);
+    console.log(theme);
+
     return (
         <header className='navbar-container'>
             <div className='navbar-text'>

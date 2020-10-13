@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React, {useState, useContext} from 'react';
+import {ThemeContext} from '../../context/ThemeContext';
 import Card from '../../components/Card/Card';
 import SocialIcon from '../../components/SocialIcon/SocialIcon';
 import BigNumber from '../../components/BigNumber/BigNumber';
@@ -10,6 +11,9 @@ const Overview = () => {
 
     // eslint-disable-next-line
     const [overview, setOverview] = useState(OVERVIEW_DATA);
+
+    const {theme} = useContext(ThemeContext);
+    console.log(theme);
 
     const overviewData = overview.map( item => 
         <Card
