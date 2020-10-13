@@ -16,18 +16,20 @@
 
   --dark-bg: hsl(230, 17%, 14%);
   --dark-bg-top:hsl(232, 19%, 15%);
-  --dark-bg-hover:hsl(228, 28%, 20%);
-  --dark-purple: hsl(228, 34%, 66%);
-  --dark-white: hsl(0, 0%, 100%);
+  --dark-bg-hover1:hsl(228, 28%, 20%);
+  --dark-bg-hover2: hsl(228, 28%, 24%);
+  --dark-color-purple: hsl(228, 34%, 66%);
+  --dark-color-white: hsl(0, 0%, 100%);
   --dark-purple-chart: hsl(243, 51%, 70%);
 
   --toogleLight: hsl(230, 22%, 74%);
   
   --light-bg: hsl(0, 0%, 100%);
   --light-bg-top: hsl(225, 100%, 98%);
-  --light-bg-hover: hsl(227, 47%, 96%);
-  --light-purple:  hsl(228, 12%, 44%);
-  --light-white: hsl(230, 17%, 14%);
+  --light-bg-hover1: hsl(227, 47%, 96%);
+  --light-bg-hover2: hsl(228, 20%, 92%);
+  --light-color-purple:  hsl(228, 12%, 44%);
+  --light-color-white: hsl(230, 17%, 14%);
   --light-purple-chart: hsl(243, 51%, 70%);
 }
 
@@ -47,17 +49,16 @@ body {
 /* ------------------------------------------------- */
 /* Container App */
 
-.container-app {
+.container-home {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.container-app::before {
+.container-home::before {
   width: 100%;
   height: 15em;
   content: '';
-  z-index: -1;
   position: absolute;
   top: 0;
   background-color: aliceblue;
@@ -67,6 +68,7 @@ body {
 /* NavBar */
 
 .navbar-container {
+  z-index: 1;
   max-width: 960px;
   width: 85%;
   display: flex;
@@ -106,6 +108,7 @@ body {
 /* SocialMain */
 
 .main-container {
+  z-index: 1;
   max-width: 960px;
   width: 85%;
   display: flex;
@@ -122,6 +125,7 @@ body {
 /* Overview */
 
 .overview-container {
+  z-index: 1;
   max-width: 960px;
   width: 85%;
   display: flex;
@@ -155,7 +159,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: #ccc; */
   background: linear-gradient( var(--toogleDark-blue), var(--toogleDark-green)) no-repeat;
   -webkit-transition: .4s;
   transition: .4s;
@@ -163,7 +166,6 @@ body {
 
 input:checked + .slider {
   background: #ccc;
-  /* background: linear-gradient( var(--toogleDark-blue), var(--toogleDark-green)) no-repeat; */
 }
 
 .dark-toogle {
@@ -199,8 +201,13 @@ input:checked + .slider {
   border-radius: 0.5em;
 }
 
+.card-container:hover {
+  cursor: pointer;
+}
+
 .card-container.sm {
   padding: 0 1em 1em;
+  margin-top: 0;
 }
 
 .card-social,
@@ -250,6 +257,3 @@ input:checked + .slider {
 .ig-border {
   background: linear-gradient( var(--instagram-yellow), var(--instagram-pink)) no-repeat;
 }
-
-/* ------------------------------------------------- */
-/* BigNumber */

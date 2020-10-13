@@ -7,7 +7,8 @@ const Toogle = ({hasText, text}) => {
     const [toogle, setToogle] = useState(false);
 
     const {theme, toogleTheme} = useContext(ThemeContext);
-    console.log(theme);
+
+    const localTheme = theme.isDark ? 'dark-theme' : 'light-theme';
 
     const handleChange = (e) => {
         let toogleVal = e.target.checked;
@@ -21,8 +22,8 @@ const Toogle = ({hasText, text}) => {
                 (hasText)
                 ? (
                     (text)
-                    ? <p className='toogle-text'>{text}</p>
-                    : <p className='toogle-text'>Switch mode</p>
+                    ? <p className={`toogle-text ${localTheme}`}>{text}</p>
+                    : <p className={`toogle-text ${localTheme}`}>{theme.isDark ? 'Dark' : 'Light'} Theme</p>
                 )
                 : null
             }
@@ -32,7 +33,7 @@ const Toogle = ({hasText, text}) => {
                     onChange={handleChange}
                     value={toogle}
                 />
-                <span className='slider round'></span>
+                <span className={`slider round ${localTheme}`}></span>
             </label>
         </div>
      );

@@ -7,13 +7,14 @@ import {TOTAL_FOLLOWERS} from '../../services';
 const NavBar = () => {
     
     const {theme} = useContext(ThemeContext);
-    console.log(theme);
+
+    const localTheme = theme.isDark ? 'dark-theme' : 'light-theme';
 
     return (
         <header className='navbar-container'>
             <div className='navbar-text'>
-                <h2 className='navbar-title'>Social Media Dashboard</h2>
-                <p className='navbar-subtitle'>Total Followers: {localeStr(TOTAL_FOLLOWERS)}</p>
+                <h2 className={`navbar-title ${localTheme}`}>Social Media Dashboard</h2>
+                <p className={`navbar-subtitle ${localTheme}`}>Total Followers: {localeStr(TOTAL_FOLLOWERS)}</p>
             </div>
             <Toogle hasText={true}/>
         </header> 

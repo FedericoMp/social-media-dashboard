@@ -1,0 +1,39 @@
+/* ------------------------------------------------- */
+/* Dark Theme */
+
+.container-home.dark-theme {
+    background-color: var(--dark-bg);
+}
+
+.container-home.dark-theme::before {
+    background-color: var(--dark-bg-top);
+}
+
+.navbar-title.dark-theme,
+.toogle-text.dark-theme,
+.big-number.dark-theme,
+.overview-title.dark-theme {
+    color: var(--dark-color-white);
+}
+
+.navbar-subtitle.dark-theme,
+.card-social.sm.dark-theme {
+    color: var(--dark-color-purple);
+}
+
+.card-social-text.lg.dark-theme,
+.card-number-text.lg.dark-theme {
+    color: var(--dark-color-purple);
+}
+
+.card-container.dark-theme {
+    background-color: var(--dark-bg-hover1);
+}
+
+.slider.dark-theme:before {
+    background-color: var(--dark-bg-hover1);
+}
+
+.card-container.dark-theme:hover {
+    background-color: var(--dark-bg-hover2);
+}

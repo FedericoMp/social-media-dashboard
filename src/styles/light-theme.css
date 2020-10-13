@@ -1,0 +1,39 @@
+/* ------------------------------------------------- */
+/* Light Theme */
+
+.container-home.light-theme {
+    background-color: var(--light-bg);
+}
+
+.container-home.light-theme::before {
+    background-color: var(--light-bg-top);
+}
+
+.navbar-title.light-theme,
+.toogle-text.light-theme,
+.big-number.light-theme,
+.overview-title.light-theme {
+    color: var(--light-color-white);
+}
+
+.navbar-subtitle.light-theme,
+.card-social.sm.light-theme {
+    color: var(--light-color-purple);
+}
+
+.card-social-text.lg.light-theme,
+.card-number-text.lg.light-theme {
+    color: var(--light-color-purple);
+}
+
+.card-container.light-theme {
+    background-color: var(--light-bg-hover1);
+}
+
+.slider.light-theme:before {
+    background-color: var(--light-bg-hover1);
+}
+
+.card-container.light-theme:hover {
+    background-color: var(--light-bg-hover2);
+}

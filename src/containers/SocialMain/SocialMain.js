@@ -13,23 +13,24 @@ const SocialMain = () => {
     const [social, setSocial] = useState(MAIN_DATA);
 
     const {theme} = useContext(ThemeContext);
-    console.log(theme);
+
+    const localTheme = theme.isDark ? 'dark-theme' : 'light-theme';
 
     const socialData = social.map(item => 
         <Card
             key={item.id}
             data={item} >
-            <div className='card-container'>
+            <div className={`card-container ${localTheme}`}>
                 <div className='card-social'>
                     <SocialIcon 
                         social={item.icon}/>
-                    <p className='card-social-text lg'>{item.user}</p>
+                    <p className={`card-social-text lg ${localTheme}`}>{item.user}</p>
                 </div>
                 <div className='card-number lg'>
                     <BigNumber 
                         size={'lg'}
                         number={formatQuant(item.cant)}/>
-                    <p className='card-number-text lg'>{item.type}</p>
+                    <p className={`card-number-text lg ${localTheme}`}>{item.type}</p>
                 </div>
                 <div className='card-up-down'>
                     <UpDownArrow 

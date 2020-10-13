@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import './styles/normalize.css';
-import './styles/index.css';
+import './styles/base.css';
+import './styles/dark-theme.css';
+import './styles/light-theme.css';
 
 import App from './App';
 

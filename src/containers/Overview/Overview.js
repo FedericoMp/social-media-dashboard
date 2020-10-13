@@ -13,14 +13,15 @@ const Overview = () => {
     const [overview, setOverview] = useState(OVERVIEW_DATA);
 
     const {theme} = useContext(ThemeContext);
-    console.log(theme);
+
+    const localTheme = theme.isDark ? 'dark-theme' : 'light-theme';
 
     const overviewData = overview.map( item => 
         <Card
             key={item.id} 
             data={item}>
-            <div className='card-container sm'>
-                <div className='card-social sm'>
+            <div className={`card-container sm ${localTheme}`}>
+                <div className={`card-social sm ${localTheme}`}>
                     <p>{item.title}</p>
                     <SocialIcon 
                         social={item.icon}/>
@@ -39,7 +40,9 @@ const Overview = () => {
 
     return (
         <section className='overview-container'>
-            <h2>Overview - Today</h2>
+            <h2 className={`
+                overview-title
+                ${theme.isDark ? 'dark-theme' : 'light-theme'}`}>Overview - Today</h2>
             <div className='overview-cards'>
                 { overviewData }
             </div>
