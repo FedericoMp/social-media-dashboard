@@ -56,9 +56,7 @@ body {
 #root {
   display: flex;
   justify-content: center;
-}
-@media (min-height: 625px) {
-  #root { height: 760px; }
+  min-width: 450px;
 }
 
 /* ------------------------------------------------- */

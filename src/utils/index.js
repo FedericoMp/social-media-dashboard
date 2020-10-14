@@ -27,3 +27,29 @@ export const localeStr = (n) => {
 export const isEmpty = (obj) => {
     return Object.keys(obj).length === 0;
 }
+
+/**
+ * Add dark-theme | light-theme to body & #root
+ * @param {string} localTheme - The theme to apply | ex > dark-theme or light-theme
+ */
+export const switchTheme = (localTheme) => {
+    const root = document.getElementById('root');
+    const body = document.getElementsByTagName('body')[0];
+
+    if (localTheme === 'dark-theme') {
+    
+        root.classList.remove('light-theme');
+        root.classList.add('dark-theme');
+     
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+    
+    } else {
+      
+        root.classList.remove('dark-theme');
+        root.classList.add('light-theme');
+      
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+    }
+}

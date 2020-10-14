@@ -1,6 +1,10 @@
 /* ------------------------------------------------- */
 /* Light Theme */
 
+body.light-theme {
+    background-color: var(--light-bg);
+}
+
 #root.light-theme {
     background-color: var(--light-bg);
 }

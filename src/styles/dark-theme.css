@@ -1,6 +1,10 @@
 /* ------------------------------------------------- */
 /* Dark Theme */
 
+body.dark-theme {
+    background-color: var(--dark-bg);
+}
+
 #root.dark-theme {
     background-color: var(--dark-bg);
 }
