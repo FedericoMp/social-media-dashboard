@@ -1,21 +1,21 @@
-.toogle-wrapper {
+.toggle-wrapper {
     display: flex;
     align-items: center;
 }
 
-.toogle-text {
+.toggle-text {
     margin-right: 1rem;
     font-weight: 700;
 }
 
-.toogle {
+.toggle {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
 }
 
-.toogle input { 
+.toggle input { 
     opacity: 0;
     width: 0;
     height: 0;

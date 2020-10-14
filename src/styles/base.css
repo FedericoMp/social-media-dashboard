@@ -11,9 +11,9 @@
   --instagram-yellow:  hsl(37, 97%, 70%);
   --instagram-pink: hsl(329, 70%, 58%);
 
-  --toogleDark-blue: hsl(210, 78%, 56%);
-  --toogleDark-green: hsl(146, 68%, 55%);
-  --toogleDark-circle: hsl(230, 17%, 14%);
+  --toggleDark-blue: hsl(210, 78%, 56%);
+  --toggleDark-green: hsl(146, 68%, 55%);
+  --toggleDark-circle: hsl(230, 17%, 14%);
 
   --dark-bg: hsl(230, 17%, 14%);
   --dark-bg-top:hsl(232, 19%, 15%);
@@ -24,7 +24,7 @@
   --dark-bg-modal: hsl(229, 19%, 23%);
   --dark-purple-chart: hsl(243, 51%, 70%);
 
-  --toogleLight: hsl(230, 22%, 74%);
+  --toggleLight: hsl(230, 22%, 74%);
   
   --light-bg: hsl(0, 0%, 100%);
   --light-bg-top: hsl(225, 100%, 98%);
@@ -163,7 +163,7 @@ body {
 }
 
 /* ------------------------------------------------- */
-/* Toogle Slider */
+/* Toggle Slider */
 
 .slider {
   position: absolute;
@@ -172,7 +172,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient( var(--toogleDark-blue), var(--toogleDark-green)) no-repeat;
+  background: linear-gradient( var(--toggleDark-blue), var(--toggleDark-green)) no-repeat;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -181,12 +181,12 @@ input:checked + .slider {
   background: #ccc;
 }
 
-.dark-toogle {
-  background: linear-gradient( var(--toogleDark-blue), var(--toogleDark-green)) no-repeat;
+.dark-toggle {
+  background: linear-gradient( var(--toggleDark-blue), var(--toggleDark-green)) no-repeat;
 }
 
-.light-toogle {
-  background: var(--toogleLight);
+.light-toggle {
+  background: var(--toggleLight);
 }
 
 /* ------------------------------------------------- */

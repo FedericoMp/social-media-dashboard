@@ -18,7 +18,7 @@ body.light-theme {
 }
 
 .navbar-title.light-theme,
-.toogle-text.light-theme,
+.toggle-text.light-theme,
 .big-number.light-theme,
 .overview-title.light-theme {
     color: var(--light-color-white);

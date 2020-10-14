@@ -1,37 +1,37 @@
 import React, {useState, useContext} from 'react';
 import {ThemeContext} from '../../context/ThemeContext';
-import './Toogle.css';
+import './Toggle.css';
 
-const Toogle = ({hasText, text}) => {
+const Toggle = ({hasText, text}) => {
 
-    const [toogle, setToogle] = useState(false);
+    const [toggle, setToggle] = useState(false);
 
-    const {theme, toogleTheme} = useContext(ThemeContext);
+    const {theme, toggleTheme} = useContext(ThemeContext);
 
     const localTheme = theme.isDark ? 'dark-theme' : 'light-theme';
 
     const handleChange = (e) => {
-        let toogleVal = e.target.checked;
-        setToogle(toogleVal)
-        toogleTheme(toogleVal)
+        let toggleVal = e.target.checked;
+        setToggle(toggleVal)
+        toggleTheme(toggleVal)
     }
 
     return (
-        <div className='toogle-wrapper'>
+        <div className='toggle-wrapper'>
             {
                 (hasText)
                 ? (
                     (text)
-                    ? <p className={`toogle-text ${localTheme}`}>{text}</p>
-                    : <p className={`toogle-text ${localTheme}`}>{theme.isDark ? 'Dark' : 'Light'} Theme</p>
+                    ? <p className={`toggle-text ${localTheme}`}>{text}</p>
+                    : <p className={`toggle-text ${localTheme}`}>{theme.isDark ? 'Dark' : 'Light'} Theme</p>
                 )
                 : null
             }
-            <label className='toogle'>
+            <label className='toggle'>
                 <input 
                     type='checkbox'
                     onChange={handleChange}
-                    value={toogle}
+                    value={toggle}
                 />
                 <span className={`slider round ${localTheme}`}></span>
             </label>
@@ -39,4 +39,4 @@ const Toogle = ({hasText, text}) => {
      );
 }
  
-export default Toogle;
+export default Toggle;

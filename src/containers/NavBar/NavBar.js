@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import {ThemeContext} from '../../context/ThemeContext';
-import Toogle from '../../components/Toogle/Toogle';
+import Toggle from '../../components/Toggle/Toggle';
 import {localeStr} from '../../utils';
 import {TOTAL_FOLLOWERS} from '../../services';
 
@@ -16,7 +16,7 @@ const NavBar = () => {
                 <h2 className={`navbar-title ${localTheme}`}>Social Media Dashboard</h2>
                 <p className={`navbar-subtitle ${localTheme}`}>Total Followers: {localeStr(TOTAL_FOLLOWERS)}</p>
             </div>
-            <Toogle hasText={true}/>
+            <Toggle hasText={true}/>
         </header> 
      );
 }

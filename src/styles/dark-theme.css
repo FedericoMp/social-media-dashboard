@@ -18,7 +18,7 @@ body.dark-theme {
 }
 
 .navbar-title.dark-theme,
-.toogle-text.dark-theme,
+.toggle-text.dark-theme,
 .big-number.dark-theme,
 .overview-title.dark-theme {
     color: var(--dark-color-white);
