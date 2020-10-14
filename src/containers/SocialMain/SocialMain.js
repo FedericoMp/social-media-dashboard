@@ -4,6 +4,7 @@ import Card from '../../components/Card/Card';
 import SocialIcon from '../../components/SocialIcon/SocialIcon';
 import BigNumber from '../../components/BigNumber/BigNumber';
 import UpDownArrow from '../../components/UpDownArrow/UpDownArrow';
+import Modal from '../../components/Modal/Modal';
 import {formatQuant} from '../../utils';
 import {MAIN_DATA} from '../../services';
 
@@ -11,6 +12,8 @@ const SocialMain = () => {
 
     // eslint-disable-next-line
     const [social, setSocial] = useState(MAIN_DATA);
+    const [showModal, setShowModal] = useState(false);
+    const [modalData, setmodalData] = useState({});
 
     const {theme} = useContext(ThemeContext);
 
@@ -19,7 +22,9 @@ const SocialMain = () => {
     const socialData = social.map(item => 
         <Card
             key={item.id}
-            data={item} >
+            data={item}
+            setShowModal={setShowModal} 
+            setmodalData={setmodalData}>
             <div className={`card-container ${localTheme}`}>
                 <div className='card-social'>
                     <SocialIcon 
@@ -34,7 +39,7 @@ const SocialMain = () => {
                 </div>
                 <div className='card-up-down'>
                     <UpDownArrow 
-                        text={item.today}
+                        text={item.todayText}
                         isUp={item.up}/>
                 </div>
             </div>
@@ -44,6 +49,16 @@ const SocialMain = () => {
     return (
         <main className='main-container'>
             { socialData }
+            {
+                (showModal)
+                    ? (
+                        <Modal
+                            modalData={modalData}
+                            setShowModal={setShowModal}
+                        />
+                    )
+                    : null
+            }
         </main>
     );
 }

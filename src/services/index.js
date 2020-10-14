@@ -18,7 +18,8 @@ export const MAIN_DATA = [
         user: '@nathanf',
         cant: 1987,
         type: 'followers',
-        today: `12 Today`,
+        todayText: `12 Today`,
+        today: 12,
         past: 81,
         up: true
     },
@@ -29,7 +30,8 @@ export const MAIN_DATA = [
         user: '@nathanf',
         cant: 1044,
         type: 'followers',
-        today: `99 Today`,
+        todayText: `99 Today`,
+        today: 99,
         past: 59,
         up: true
     },
@@ -40,7 +42,8 @@ export const MAIN_DATA = [
         user: '@realnathanf',
         cant: 11e6,
         type: 'followers',
-        today: `1099 Today`,
+        todayText: `1099 Today`,
+        today: 1099,
         past: 875,
         up: true
     },
@@ -51,7 +54,8 @@ export const MAIN_DATA = [
         user: 'Nathan F.',
         cant: 1987,
         type: 'subscribers',
-        today: `12 Today`,
+        todayText: `12 Today`,
+        today: 12,
         past: 20,
         up: false
     }

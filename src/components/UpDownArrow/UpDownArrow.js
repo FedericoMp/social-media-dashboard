@@ -9,9 +9,15 @@ const UpDownArrow = ({text, isUp}) => {
                 src={(isUp) ? ICON_UP : ICON_DOWN}
                 alt={(isUp) ? 'Up' : 'Down'}
             />
-            <span
-                className={(isUp) ? 'to-up' : 'to-down'}
-            >{text}</span>
+            {
+                (text)
+                ? (
+                    <span
+                        className={(isUp) ? 'to-up' : 'to-down'}
+                    >{text}</span>
+                )
+                : null
+            }
         </div>
      );
 }

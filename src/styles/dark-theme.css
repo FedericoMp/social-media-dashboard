@@ -26,14 +26,24 @@
     color: var(--dark-color-purple);
 }
 
-.card-container.dark-theme {
-    background-color: var(--dark-bg-hover1);
-}
-
-.slider.dark-theme:before {
+.card-container.dark-theme,
+.slider.dark-theme:before,
+.modal-top.dark-theme {
     background-color: var(--dark-bg-hover1);
 }
 
 .card-container.dark-theme:hover {
     background-color: var(--dark-bg-hover2);
+}
+
+.modal-title.dark-theme,
+.modal-user.dark-theme,
+.modal-caption.dark-theme,
+.modal-close.dark-theme {
+    color: var(--dark-color-white);
+}
+
+.modal-chart.dark-theme {
+    color: var(--dark-purple-chart);
+    background: var(--dark-bg-modal);
 }

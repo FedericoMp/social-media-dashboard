@@ -26,14 +26,24 @@
     color: var(--light-color-purple);
 }
 
-.card-container.light-theme {
-    background-color: var(--light-bg-hover1);
-}
-
-.slider.light-theme:before {
+.card-container.light-theme,
+.slider.light-theme:before,
+.modal-top.light-theme {
     background-color: var(--light-bg-hover1);
 }
 
 .card-container.light-theme:hover {
     background-color: var(--light-bg-hover2);
+}
+
+.modal-title.light-theme,
+.modal-user.light-theme,
+.modal-caption.light-theme,
+.modal-close.light-theme {
+    color: var(--light-color-white);
+}
+
+.modal-chart.light-theme {
+    color: var(--light-purple-chart);
+    background: var(--light-bg-modal);
 }

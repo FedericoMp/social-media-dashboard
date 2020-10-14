@@ -29,8 +29,16 @@ const Card = (props) => {
         }
     }
 
-    return (  
-        <div className={`card ${borderStyle}`}>
+    const showChart = () => {
+        if (props.data.mainDataType) {
+            props.setShowModal(true)
+            props.setmodalData(props.data);
+        }
+    }
+
+    return ( 
+        <div className={`card ${borderStyle}`}
+            onClick={() => showChart()}>
             { props.children }
         </div>
     );

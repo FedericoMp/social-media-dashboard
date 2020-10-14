@@ -40,9 +40,7 @@ const Overview = () => {
 
     return (
         <section className='overview-container'>
-            <h2 className={`
-                overview-title
-                ${theme.isDark ? 'dark-theme' : 'light-theme'}`}>Overview - Today</h2>
+            <h2 className={`overview-title ${localTheme}`}>Overview - Today</h2>
             <div className='overview-cards'>
                 { overviewData }
             </div>

@@ -20,6 +20,7 @@
   --dark-bg-hover2: hsl(228, 28%, 24%);
   --dark-color-purple: hsl(228, 34%, 66%);
   --dark-color-white: hsl(0, 0%, 100%);
+  --dark-bg-modal: hsl(229, 19%, 23%);
   --dark-purple-chart: hsl(243, 51%, 70%);
 
   --toogleLight: hsl(230, 22%, 74%);
@@ -30,6 +31,7 @@
   --light-bg-hover2: hsl(228, 20%, 92%);
   --light-color-purple:  hsl(228, 12%, 44%);
   --light-color-white: hsl(230, 17%, 14%);
+  --light-bg-modal: hsl(228, 46%, 98%);
   --light-purple-chart: hsl(243, 51%, 70%);
 }
 
@@ -37,6 +39,8 @@
 /* UpDown Color */
 .to-up { color: var(--limeGreen); }
 .to-down { color: var(--brightRed); }
+.to-up > .big-number { color: var(--limeGreen)!important; }
+.to-down > .big-number { color: var(--brightRed)!important; }
 
 /* ------------------------------------------------- */
 /* Tags Element */
@@ -108,7 +112,7 @@ body {
 /* SocialMain */
 
 .main-container {
-  z-index: 1;
+  z-index: 2;
   max-width: 960px;
   width: 85%;
   display: flex;
@@ -242,6 +246,7 @@ input:checked + .slider {
 
 /* ------------------------------------------------- */
 /* Cards Border */
+
 .fb-border {
   background: var(--facebook) no-repeat;
 }
