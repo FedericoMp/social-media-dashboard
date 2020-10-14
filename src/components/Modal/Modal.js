@@ -35,7 +35,7 @@ const Modal = ({modalData, setShowModal, calculatedChartWidth}) => {
     }
 
     return (
-        <div className='modal-backdrop' id='modal'>
+        <div className='modal-backdrop'>
             <div className={`modal ${localTheme}`}>
                 <div className={`modal-top ${localTheme}`}>
                     <div className={`modal-header ${localTheme}`}>
