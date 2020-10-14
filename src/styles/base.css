@@ -1,5 +1,6 @@
 /* ------------------------------------------------- */
 /* CSS Vars */
+
 :root {
   --limeGreen: hsl(163, 72%, 41%);
   --brightRed: hsl(356, 69%, 56%);
@@ -37,6 +38,7 @@
 
 /* ------------------------------------------------- */
 /* UpDown Color */
+
 .to-up { color: var(--limeGreen); }
 .to-down { color: var(--brightRed); }
 .to-up > .big-number { color: var(--limeGreen)!important; }
@@ -44,6 +46,7 @@
 
 /* ------------------------------------------------- */
 /* Tags Element */
+
 body {
   margin: 0;
   padding: 0;
@@ -53,6 +56,9 @@ body {
 #root {
   display: flex;
   justify-content: center;
+}
+@media (min-height: 625px) {
+  #root { height: 760px; }
 }
 
 /* ------------------------------------------------- */
@@ -192,7 +198,7 @@ input:checked + .slider {
   border-radius: 0.5em;
   margin: 1em;
   display: flex;
-  width: 208px;
+  width: 160px;
   box-sizing: border-box;
   flex-direction: column;
   background: #efefef;
@@ -249,21 +255,17 @@ input:checked + .slider {
   justify-content: space-between;
 }
 
+.card-social-text {
+  font-size: small;
+  margin: 1.5em 0;
+}
+
 /* ------------------------------------------------- */
 /* Cards Border */
 
-.fb-border {
-  background: var(--facebook) no-repeat;
-}
-
-.tw-border {
-  background: var(--twitter) no-repeat;
-}
-
-.yt-border {
-  background: var(--youTube) no-repeat;
-}
-
+.fb-border { background: var(--facebook) no-repeat; }
+.tw-border { background: var(--twitter) no-repeat; }
+.yt-border { background: var(--youTube) no-repeat; }
 .ig-border {
   background: linear-gradient( var(--instagram-yellow), var(--instagram-pink)) no-repeat;
 }

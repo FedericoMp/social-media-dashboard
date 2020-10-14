@@ -51,3 +51,8 @@
     color: var(--light-purple-chart);
     background: var(--light-bg-modal);
 }
+
+.modal.light-theme {    
+    background: hsl(228, 50%, 96%);
+    border-radius: 0.5em;
+}

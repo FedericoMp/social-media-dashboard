@@ -12,7 +12,7 @@ function CustomTooltip({ payload, active }) {
     return null;
 }
 
-const Chart = ({userType}) => {
+const Chart = ({userType, chartWidth}) => {
     
     const data = [
         {name: userType, uv: 3, pv: 3, amt: 4},
@@ -26,7 +26,7 @@ const Chart = ({userType}) => {
 
     return ( 
         <LineChart 
-            width={500} height={150} 
+            width={chartWidth} height={150} 
             data={data} margin={{ top: 5, right: 20, bottom: 5, left: 0 }}>
             
             <Line type="monotone" dataKey="uv" stroke="#8884d8" />

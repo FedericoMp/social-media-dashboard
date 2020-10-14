@@ -7,7 +7,7 @@ import Chart from '../Chart/Chart';
 import {formatQuant} from '../../utils';
 import './Modal.css';
 
-const Modal = ({modalData, setShowModal}) => {
+const Modal = ({modalData, setShowModal, calculatedChartWidth}) => {
 
     let title = '';
 
@@ -35,8 +35,8 @@ const Modal = ({modalData, setShowModal}) => {
     }
 
     return (
-        <div className='modal-backdrop'>
-            <div className='modal'>
+        <div className='modal-backdrop' id='modal'>
+            <div className={`modal ${localTheme}`}>
                 <div className={`modal-top ${localTheme}`}>
                     <div className={`modal-header ${localTheme}`}>
                         <div className='modal-header-text'>
@@ -83,8 +83,10 @@ const Modal = ({modalData, setShowModal}) => {
                     </div>
                 </div>
                 <div className={`modal-chart ${localTheme}`}>
+                    <span>May 4 - May 13</span>
                     <Chart
                         userType={modalData.type}
+                        chartWidth={calculatedChartWidth}
                     />
                 </div>
             </div>

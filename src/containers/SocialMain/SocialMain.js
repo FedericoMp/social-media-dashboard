@@ -46,6 +46,17 @@ const SocialMain = () => {
         </Card>
     );
 
+    window.addEventListener('resize', () => setShowModal(false));
+
+    let calculatedChartWidth; 
+    if (window.innerWidth <= 550) {
+        calculatedChartWidth = 300;
+    } else if (window.innerWidth <= 600) {
+        calculatedChartWidth = 400;
+    } else if (window.innerWidth <= 750 || window.innerWidth >= 750) {
+        calculatedChartWidth = 500;
+    }
+
     return (
         <main className='main-container'>
             { socialData }
@@ -55,6 +66,7 @@ const SocialMain = () => {
                         <Modal
                             modalData={modalData}
                             setShowModal={setShowModal}
+                            calculatedChartWidth={calculatedChartWidth}
                         />
                     )
                     : null

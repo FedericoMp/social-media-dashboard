@@ -22,7 +22,7 @@ const Overview = () => {
             data={item}>
             <div className={`card-container sm ${localTheme}`}>
                 <div className={`card-social sm ${localTheme}`}>
-                    <p>{item.title}</p>
+                    <p className='card-social-text'>{item.title}</p>
                     <SocialIcon 
                         social={item.icon}/>
                 </div>

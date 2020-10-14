@@ -23,11 +23,17 @@
 
 .modal-chart {
     display: flex;
-    padding: 1em 0.5em;
-    height: 150px;
-    background: hsl(229deg 19% 23%);
+    flex-direction: column;
+    padding: 1em;
+    height: 180px;
     border-bottom-right-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+}
+.modal-chart > span {
+    font-size: small;
+    margin-bottom: 1em;
 }
 
 .modal-header {
@@ -59,17 +65,30 @@
 
 .modal-data {
     display: flex;
+    flex-direction: column;
     margin-top: 1em;
     padding: 0 1em 1em;
+}
+@media (min-width: 550px) {
+    .modal-data {
+        flex-direction: row;
+    }
 }
 
 .modal-text {
     display: flex; 
     align-items: center;
-    margin-right: 1.5em;
+    margin-right: 0;
+    margin-bottom: 1.5em;
+}
+@media (min-width: 550px) {
+    .modal-text {
+        margin-right: 1.5em;
+        margin-bottom: 0;
+    }
 }
 
 .modal-caption {
-    font-size: x-small;
+    font-size: xx-small;
     margin-left: 0.5em;
 }
