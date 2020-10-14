@@ -3,6 +3,7 @@ import {ThemeContext} from '../../context/ThemeContext';
 import SocialIcon from '../SocialIcon/SocialIcon';
 import BigNumber from '../BigNumber/BigNumber';
 import UpDownArrow from '../UpDownArrow/UpDownArrow';
+import Chart from '../Chart/Chart';
 import {formatQuant} from '../../utils';
 import './Modal.css';
 
@@ -82,7 +83,9 @@ const Modal = ({modalData, setShowModal}) => {
                     </div>
                 </div>
                 <div className={`modal-chart ${localTheme}`}>
-                    Modal Chart
+                    <Chart
+                        userType={modalData.type}
+                    />
                 </div>
             </div>
         </div>

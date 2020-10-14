@@ -50,6 +50,11 @@ body {
   font-family: 'Inter', 'Helvetica Neue', sans-serif;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+}
+
 /* ------------------------------------------------- */
 /* Container App */
 

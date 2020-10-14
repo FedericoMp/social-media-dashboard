@@ -9,6 +9,15 @@ const HomePage = () => {
     const {theme} = useContext(ThemeContext);
 
     const localTheme = theme.isDark ? 'dark-theme' : 'light-theme';
+    
+    const root = document.getElementById('root');
+    if (localTheme === 'dark-theme') {
+      root.classList.remove('light-theme');
+      root.classList.add('dark-theme');
+    } else {
+      root.classList.remove('dark-theme');
+      root.classList.add('light-theme');
+    }
 
     return (
         <div className={`container-home ${localTheme}`}>

@@ -11,7 +11,10 @@
     background-color: rgba(0,0,0,0.9);
 }
 
-.modal { width: 80%; }
+.modal { 
+    width: 80%;
+    max-width: 520px;
+}
 
 .modal-top { 
     border-top-left-radius: 0.5em;
@@ -21,7 +24,7 @@
 .modal-chart {
     display: flex;
     padding: 1em 0.5em;
-    height: 100px;
+    height: 150px;
     background: hsl(229deg 19% 23%);
     border-bottom-right-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
